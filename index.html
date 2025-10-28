@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Printer® Care | Printer® Customer Care</title>
+    <meta name="description" content="Get Printer customer support for your Printer products including laptops, desktops, Printers, tablets and more. Download drivers, troubleshoot issues, and get expert help.">
+    <link rel="shortcut icon" href="https://www8.Printer.com/content/dam/sites/worldwide/personal-computers/consumer/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Printer+Simplified:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional Printer-specific styles for enhanced version */
+        .Printer-cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--Printer-dark-gray);
+            color: var(--Printer-white);
+            padding: 16px 0;
+            z-index: 1001;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .Printer-cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        .Printer-cookie-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        .Printer-cookie-text {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .Printer-cookie-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .Printer-cookie-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--Printer-white);
+            background: transparent;
+            color: var(--Printer-white);
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .Printer-cookie-btn.accept {
+            background-color: var(--Printer-blue);
+            border-color: var(--Printer-blue);
+        }
+
+        .Printer-cookie-btn:hover {
+            background-color: var(--Printer-white);
+            color: var(--Printer-dark-gray);
+        }
+
+        .breadcrumb {
+            background-color: var(--Printer-gray);
+            padding: 12px 0;
+            font-size: 13px;
+        }
+
+        .breadcrumb .container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .breadcrumb a {
+            color: var(--Printer-blue);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: var(--Printer-text-gray);
+        }
+
+        .Printer-urgency-banner {
+            background-color: var(--Printer-orange);
+            color: var(--Printer-white);
+            text-align: center;
+            padding: 12px 0;
+            font-weight: 500;
+        }
+
+        .call-now-btn {
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            flex-shrink: 0;
+            background-color: var(--Printer-blue);
+            color: var(--Printer-white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            gap: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .call-now-btn:hover {
+            background-color: var(--Printer-dark-blue);
+            color: var(--Printer-white);
+        }
+
+        @media (max-width: 768px) {
+            .Printer-cookie-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .Printer-cookie-buttons {
+                justify-content: center;
+            }
+
+            .call-now-btn {
+                height: 36px;
+                padding: 8px 16px;
+                font-size: 12px;
+                gap: 6px;
+            }
+
+            .call-now-btn i {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .call-now-btn {
+                height: 32px;
+                padding: 6px 12px;
+                font-size: 11px;
+                gap: 4px;
+            }
+
+        .hero-suggestions {
+            color: var(--Printer-white);
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .hero-suggestions span {
+            color: var(--Printer-white);
+        }
+
+        .hero-suggestions a {
+            color: var(--Printer-white);
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Printer Urgency Banner -->
+    <div class="Printer-urgency-banner">
+        <div class="container">
+            <strong>Important:</strong> Printer Support - Learn about compatibility and upgrade options for your Printer devices
+        </div>
+    </div>
+
+    
+    <!-- Printer Global Header -->
+    <header class="Printer-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <a href="#" class="Printer-logo">
+                            <img src="logo.png" alt="Printer Logo">
+                        </a>
+                        <span class="support-text">Printer Care</span>
+                    </div>
+                    <nav class="primary-nav">
+                        <ul>
+                            <li><a href="#">Software & Drivers</a></li>
+                            <li><a href="#">Troubleshooting</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <a href="tel:+12345678900" class="call-now-btn">
+                            <i class="fas fa-phone"></i> Call Us
+                        </a>
+                    </div>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get support for your Printer devices</h1>
+                <p class="hero-subtitle">Find drivers, manuals, troubleshooting guides, and more for all your Printer products</p>
+                <div class="hero-search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Enter your Printer product name, model number, or serial number" class="product-search">
+                        <button class="search-button"><i class="fas fa-search"></i> Search</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <h2 class="section-subtitle">Get started with Printer Support</h2>
+            <div class="actions-grid">
+                <div class="action-card featured">
+                    <div class="action-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Download Software & Drivers</h3>
+                    <p>Get the latest drivers, software, and firmware for your Printer products</p>
+                    <a href="tel:+12345678900" class="action-link">Find Software</a>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Diagnose & Fix</h3>
+                    <p>Automatically detect and resolve issues with your Printer devices</p>
+                    <a href="tel:+12345678900" class="action-link">Start Diagnostics</a>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Contact Support</h3>
+                    <p>Get help from Printer customer support experts</p>
+                    <a href="tel:+12345678900" class="action-link">Get Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <h2 class="section-title">Support by Errors</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Paper Jams</h3>
+                    <p>A paper jam is a common Printer or copier error that tends to create a lot of workplace frustration. To fix this similar issue click on below button.</p>
+                    <a href="tel:+12345678900" class="category-link">Fix Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Scanner stopped working</h3>
+                    <p>If your multifunction Printer's (MFP) scanner stops working, it may be that the scanner software has become corrupted. We'll help you to Fix it. Click below Button to get instant help.</p>
+                    <a href="tel:+12345678900" class="category-link">Fix Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Ink cartridge challenges</h3>
+                    <p>Ink or toner issues can often happen if the cartridges aren’t installed correctly. You may also want to check for any clogged nozzles or dried-up toner that could be blocking up certain areas of your printed page.</p>
+                    <a href="tel:+12345678900" class="category-link">Fix Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Printer Not Responding</h3>
+                    <p>Printers occasionally stop responding due to overloads when idle.</p>
+                    <a href="tel:+12345678900" class="category-link">Fix Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Clogged Printhead</h3>
+                    <p>Symptoms of a clogged Printer printhead include streaky or faded prints, missing text or colors, and blurry documents. You may also see a message from your Printer or software that maintenance is needed, or that ink cartridges are full when no ink is printing.</p>
+                    <a href="tel:+12345678900" class="category-link">Fix Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Enterprise Products</h3>
+                    <p>Support for Printer enterprise and business solutions</p>
+                    <a href="tel:+12345678900" class="category-link">Fix Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Tools -->
+    <section class="support-tools">
+        <div class="container">
+            <div class="tools-content">
+                <div class="tools-info">
+                    <h2>Printer Support Tools</h2>
+                    <p>Powerful tools to help you get the most out of your Printer products</p>
+                    <ul class="tools-list">
+                        <li><i class="fas fa-check"></i> Automatic driver updates</li>
+                        <li><i class="fas fa-check"></i> System diagnostics and repair</li>
+                        <li><i class="fas fa-check"></i> Warranty status checker</li>
+                        <li><i class="fas fa-check"></i> Product registration</li>
+                    </ul>
+                </div>
+                <div class="tools-visual">
+                    <div class="tool-cards">
+                        <div class="tool-card">
+                            <h4>Printer Support Assistant</h4>
+                            <p>Keep your PC running smoothly</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Printer Print and Scan Doctor</h4>
+                            <p>Diagnose Printer issues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <h2 class="section-title">Need More Help?</h2>
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Support</h3>
+                    <p>Speak with an Printer support agent</p>
+                    <a href="#" class="contact-link">Call Now</a>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat online with Printer experts</p>
+                    <a href="#" class="contact-link">Start Chat</a>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-forumbee"></i>
+                    </div>
+                    <h3>Community Forums</h3>
+                    <p>Get help from other Printer users</p>
+                    <a href="#" class="contact-link">Visit Forums</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="Printer-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Download Drivers</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Warranty Check</a></li>
+                        <li><a href="#">Product Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Desktops</a></li>
+                        <li><a href="#">Printers</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Monitors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">User Guides</a></li>
+                        <li><a href="#">Video Tutorials</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">System Requirements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About Printer</h4>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h4>Follow Printer</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">CA Privacy</a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Printer Development Company, L.P.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
